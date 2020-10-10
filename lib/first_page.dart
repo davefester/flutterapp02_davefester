@@ -62,7 +62,11 @@ class _MyFirstPageState extends State<MyFirstPage> {
                       setState(() {
                         _enabled = onChangedValue;
                         if (_enabled) {
-                          _msg1 = 'Click Me';
+                          if (_count == 0) {
+                            _msg1 = 'Click Me';
+                          } else {
+                            _msg1 = 'Clicked ' + _count.toString();
+                          }
                           _resetBtnText = 'Reset';
                           print('_enabled is true');
                         } else {

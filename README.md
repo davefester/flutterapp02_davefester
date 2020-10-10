@@ -1,16 +1,19 @@
-# lab_1
+# Assignment 2
 
 A new Flutter project.
 
-## Getting Started
+## Button Functionality
 
-This project is a starting point for a Flutter application.
+In our class demonstrations we went over the Switch Widget and used it to enable and disable a Material Button. Two screen shots from that demo are presented below, and the code is available on github.
 
-A few resources to get you started if this is your first Flutter project:
+Your assignment is to take this demo app and add to it as described below. Screen shots for the new and improved app are shown below.
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+The new app is to disable both a red and blue button when the app starts and when the switch is in the false position.
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+When the switch is in the true position both the red and blue buttons appear and are functional.
+
+If the switch is in the true position and if the red button has not been pressed yet, its text should say “Click Me”, but every time it is pressed its text will be updated to reflect the number of times that it has been clicked (ie: “Clicked 3”).
+
+If the switch is in the true position and if the blue button is pressed, the red button counter will be reset, and the red button will once again say “Click Me”.
+
+At any time that the enable functionality switch is put in the false position, both buttons will disappear and of course become disabled. The red button count will not be lost though, so that when the switch is toggled to the true position once again, the red and blue buttons will appear, and the red buttons text will reflect how many times it has been pressed. As mentioned before, if the red button has not been pressed, or has been reset, then the red button text should say “Click Me”.
